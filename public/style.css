@@ -223,8 +223,8 @@ header{
     .btn {
         padding: 10px 20px;
         width: 200px;
-        width: 20vw;
-        min-width: 200px;
+        /*width: 20vw;
+        min-width: 200px;*/
         margin: 20px;
         border-radius: 12px;
         font-weight: bold;
@@ -250,6 +250,11 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .img-one{
+      max-width: 100%;
+      height: auto;
     }
 
     .block-text{
@@ -302,7 +307,7 @@ header{
   padding: 0 20px; 
 }
 
-.image-two{
+.img-two{
   max-width: 100%;
   height: auto;
 }
@@ -323,7 +328,7 @@ header{
   padding: 0 20px; 
 }
 
-.image-three{
+.img-three{
   max-width: 100%;
   height: auto
 }
@@ -343,7 +348,7 @@ header{
   padding: 0 20px; 
 }
 
-.image-four{
+.img-four{
   max-width: 100%;
   height: auto;
 }
@@ -364,7 +369,7 @@ header{
   padding: 0 20px; 
 }
 
-.image-five{
+.img-five{
   max-width: 100%;
   height: auto
 }
@@ -385,15 +390,10 @@ header{
   padding: 0 20px; 
 }
 
-.image-six{
+.img-six{
   max-width: 100%;
   height: auto;
 }
-    
-    .image-w-icons{
-        width: 350px;
-        height: 350px;
-    }
 
 .card-container {
     padding-top: 250px;
@@ -414,10 +414,10 @@ header{
 .card-container .image-icons {
     z-index: 10;
     position: absolute;
-    top: -250px;
+    top: -270px;
 }
 
-.oscar {
+.pam {
     text-align: center;
     margin-top: 140px;
 }
@@ -460,9 +460,18 @@ width: 100%;
   }
 
 }
+
+@media (max-width: 500px){
+  .final-btns{ width: 300px;}
+  #btn-5{
+      margin: 0;
+      width: 150px;
+      font-size: 15px;
+  }
+}
   
 .rounded-btn-holder {
-    margin-left: auto; 
+    margin-right: 20px ; 
 }
 
 .secondary.rounded {
@@ -559,21 +568,11 @@ footer {
   .content-three > * {
     flex: 1 1 75%; 
     max-width: 45%;
-    }      
-  /* Styling for responsiveness*/
-  /*@media (max-width:900px){
-.block-text{
-  max-width: 100%;
-}
-  }*/
+    }     
 
   @media (max-width: 768px){
     .hero-text {
       max-width: 85%;
-       }
-       .image-one{
-        width: 400px;
-        height: 400px;
        }
  
        .content-three{
@@ -677,3 +676,9 @@ footer {
    
   }
 
+@media (max-width: 550px){
+  h1{ font-size: 25px;}
+  h2{  font-size: 22px;}
+  h3{ font-size: 20px;}
+  p{ font-size: 18px; }
+}
