@@ -321,7 +321,7 @@ ul li ul.dropdown {
     }
 
     .img-one{
-      max-width: 100%;
+      width: 400px;
       height: auto;
     }
 
@@ -502,7 +502,7 @@ ul li ul.dropdown {
 .card-container .image-icons {
     z-index: 10;
     position: absolute;
-    top: -270px;
+    top: -180px;
 }
 
 .pam {
@@ -550,6 +550,9 @@ width: 100%;
 }
 
 @media (max-width: 500px){
+  .img-one{
+    width: 280px;
+  }
   .final-btns{ width: 300px;}
   #btn-5{
       margin: 0;

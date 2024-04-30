@@ -1,13 +1,12 @@
 const express = require('express');
 const axios = require('axios');
 const path = require('path');
-const apiKey = process.env.OMNISEND_API_KEY;
-
-
-const app = express();
-
 
 require("dotenv").config();
+
+const apiKey = process.env.OMNISEND_API_KEY;
+const app = express();
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -53,7 +52,7 @@ app.post('/submit', async (req, res) => {
         console.log('Data sent to Omnisend successfully:', response.data);
         res.status(200).send('Form submitted successfully');
     } catch (error) {
-        console.error('Error sending data to Omnisend:', error.response.data);
+        console.error('Error sending data to Omnisend:', error.response ? error.response.data : error.message);
         res.status(500).send('Error submitting form');
     }
 });
